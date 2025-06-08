@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tabinda Gemstones</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #fefefe;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background-color: #620d26;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    nav {
+      background-color: #3a0817;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #8d2b45;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #620d26;
+    }
+    .product {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 10px;
+    }
+    .gallery-img {
+      display: inline-block;
+      margin: 10px;
+    }
+    .gallery-img img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    .contact-buttons a {
+      display: inline-block;
+      margin: 10px 10px 0 0;
+      padding: 10px 20px;
+      background-color: #620d26;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .contact-buttons a:hover {
+      background-color: #8d2b45;
+    }
+    footer {
+      background-color: #3a0817;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+    /* Contact form styles */
+    form {
+      max-width: 500px;
+      margin-top: 20px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      resize: vertical;
+      font-size: 1rem;
+    }
+    form button {
+      background-color: #620d26;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+    form button:hover {
+      background-color: #8d2b45;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Tabinda Gemstones</h1>
+    <p>Explore natural beauty through premium quality gemstones.</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Tabinda Gemstones has been offering authentic and exquisite gemstones since 2005. We value quality, trust, and tradition.</p>
+  </section>
+
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="product">
+      <h3>Ruby</h3>
+      <p>High-quality natural ruby stone.</p>
+    </div>
+    <div class="product">
+      <h3>Emerald</h3>
+      <p>Deep green emerald for prosperity.</p>
+    </div>
+    <div class="product">
+      <h3>Sapphire</h3>
+      <p>Blue sapphire known for wisdom and royalty.</p>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-img"><img src="https://via.placeholder.com/150" alt="Gemstone 1"></div>
+    <div class="gallery-img"><img src="https://via.placeholder.com/150" alt="Gemstone 2"></div>
+    <div class="gallery-img"><img src="https://via.placeholder.com/150" alt="Gemstone 3"></div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-buttons">
+      <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      <a href="https://facebook.com/yourpage" target="_blank" rel="noopener noreferrer">Facebook</a>
+      <a href="https://www.tiktok.com/@yourusername" target="_blank" rel="noopener noreferrer">TikTok</a>
+      <a href="https://goo.gl/maps/example" target="_blank" rel="noopener noreferrer">Google Maps</a>
+      <a href="https://www.google.com/search?q=Tabinda+Gemstones" target="_blank" rel="noopener noreferrer">Google Business</a>
+    </div>
+
+    <h3>Send Us a Message</h3>
+    <form id="contact-form" action="https://formsubmit.co/your@email.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Tabinda Gemstones. All rights reserved.
+  </footer>
+
+  <script>
+    // Optional: You can add JavaScript here if you want to enhance behavior
+    // For example, confirmation alert on form submission:
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      alert('Thank you for contacting Tabinda Gemstones! We will get back to you soon.');
+    });
+  </script>
+
+</body>
+</html>
